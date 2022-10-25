@@ -4,6 +4,8 @@ If you are enjoying react-jalali and want to see it improve, please consider giv
 
 React-jalali is a set of React components that help you create utilities related to jalali dates such as calendars and date pickers and (coming in a future update) time pickers.
 
+Demo: https://react-jalali-demo.vercel.app/
+
 ## Installation
 
 `npm install @kasraghoreyshi/calendar`

@@ -5,7 +5,7 @@ import {
   useFloating,
 } from "@floating-ui/react-dom";
 import { useClickOutside } from "@mantine/hooks";
-import { Calendar, ICalendarProps } from "@react-jalali/calendar";
+import { Calendar, ICalendarProps } from "@kasraghoreyshi/calendar";
 import { format } from "date-fns-jalali";
 import { convertDigits } from "persian-helpers";
 import { useEffect, useState } from "react";

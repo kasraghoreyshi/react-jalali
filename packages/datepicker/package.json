@@ -1,13 +1,17 @@
 {
-    "name": "@react-jalali/datepicker",
-    "version": "0.0.0",
+    "name": "@kasraghoreyshi/datepicker",
+    "version": "0.0.1",
     "main": "./dist/index.js",
+    "module": "dist/index.js",
     "types": "./dist/index.d.ts",
     "description": "A simple, lightweight and elegant Jalali date picker for react.",
     "author": {
         "name": "Kasra Ghoreyshi",
         "email": "kasra.ghoreyshi84@gmail.com"
     },
+    "files": [
+        "dist/**"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kasraghoreyshi/react-jalali.git"
@@ -41,7 +45,7 @@
     "dependencies": {
         "@floating-ui/react-dom": "^1.0.0",
         "@mantine/hooks": "^5.6.2",
-        "@react-jalali/calendar": "*",
+        "@kasraghoreyshi/calendar": "*",
         "classnames": "^2.3.2",
         "date-fns-jalali": "^2.29.3-0",
         "persian-helpers": "^0.1.2",

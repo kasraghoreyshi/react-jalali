@@ -1,4 +1,4 @@
-const withTM = require("next-transpile-modules")(["@react-jalali/calendar"]);
+const withTM = require("next-transpile-modules")(["@kasraghoreyshi/calendar"]);
 
 module.exports = withTM({
   reactStrictMode: true,

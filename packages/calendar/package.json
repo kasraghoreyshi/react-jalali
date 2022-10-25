@@ -1,8 +1,12 @@
 {
-  "name": "@react-jalali/calendar",
-  "version": "0.0.0",
+  "name": "@kasraghoreyshi/calendar",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist/**"
+  ],
   "description": "A simple, lightweight and elegant Jalali calendar for react.",
   "author": {
     "name": "Kasra Ghoreyshi",

@@ -1,5 +1,5 @@
-import { Calendar } from "@react-jalali/calendar";
-import "@react-jalali/calendar/styles.css";
+import { Calendar } from "@kasraghoreyshi/calendar";
+import "@kasraghoreyshi/calendar/styles.css";
 
 export default function Example() {
   return <Calendar />;

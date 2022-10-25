@@ -1,73 +1,96 @@
-# Turborepo starter
+# Welcome to StackEdit!
 
-This is an official npm starter turborepo.
+ ``If you are enjoying react-jalali and want to see it improve, please consider giving it a star. Thank you in advance!``
 
-## What's inside?
+# What is react-jalali?
 
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
+React-jalali is a set of React components that help you create utilities related to jalali dates such as calendars and date pickers and (coming in a future update) time pickers.
 
-### Apps and Packages
+## Installation
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+``npm install @react-jalali/calendar``
+``npm install @react-jalali/datepicker``
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+or if using Yarn:
+``yarn add @react-jalali/calendar``
+``yarn add @react-jalali/datepicker``
 
-### Utilities
+## Jalali calendar
 
-This turborepo has some additional tools already setup for you:
+Let's start by displaying a very simple Jalali calendar using react-jalali. We do it by import the styles and the component itself like so:
+```jsx
+import { Calendar } from  "@react-jalali/calendar";
+import  "@react-jalali/calendar/styles.css";
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+export  default  function  Example() {
 
-### Build
+return (
 
-To build all apps and packages, run the following command:
+<Calendar  />
 
+);
+
+}
 ```
-cd my-turborepo
-npm run build
+### Configuration
+Now we are going to explore every single prop that could be passed to Calendar.
+
+| Prop name | Description | Default value
+|--|--| --|
+| highlightToday | Highlights the current day that is displayed in the calendar.  | true |
+|onChange|Function that is called when the user selects a date| n/a |
+|activeDate| Controls the active date in the calendar | n/a|
+|defaultActiveDate| Sets the default date in the calendar without explicitly controlling it.| n/a |
+|theme| Customizes how the calendar looks. Has 3 pre-built themes that are ``dark``, ``darkRed`` and ``light`` and also could have a completely customized theme. For more information on how to customize the calendar's appearance, please visit the following section.|light|
+|showGoToToday|When enabled, it shows the go to today button which is written as: برو به امروز|true|
+|minDate| When you pass a date to this prop, the user can't select any date older than the minDate.| n/a |
+|maxDate| When you pass a date to this prop, the user can't select any date newer than the maxDate.| n/a|
+|disabledDates| When a list of dates is passed to this prop, those dates will become unselectable| []|
+|showFooter|Controls whether or not the footer should be shown| true|
+|disableTransitions| When set to true, it disables all the transitions across the calendar.| false |
+|bodyTransition| Can be set to either of these options: ``zoomIn``, ``zoomOut`` and ``fade``|zoomIn|
+|showFridaysAsRed| When set to true, any friday appearing on the calendar will appear as red/selected color in the theme. | true |
+|months| Names of the 12 months as an array.|["فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند",]|
+|onConfirm| Function that gets called when the user clicks the confirm button| n/a |
+|onCancel| Function that gets called when the user clicks the cancel button| n/a |
+
+## Jalali date picker
+Let's start by displaying a very simple Jalali date picker using react-jalali. We do it by import the styles and the component itself like so:
+```jsx
+import { DatePicker } from  "@react-jalali/datepicker";
+import  "@react-jalali/calendar/styles.css";
+import  "@react-jalali/datepicker/styles.css";
+
+export  default  function  Example() {
+
+return (
+
+<DatePicker />
+
+);
+
+}
 ```
+### Configuration
+Now we are going to explore every single prop that could be passed to DatePicker.
+| Prop name | Description | Default value
+|--|--| --|
+|autoUpdate|Automatically updates the input whenever the user changes the active date. This means that the confirm button won't be needed for saving the date anymore.| false|
+|defaultDate| The date that will be displayed on the input by default| n/a |
+|calendarProps| Every prop for configuring the calendar component| n/a|
+|date| Changes the date in a controlled manner | n/a |
+|dateFormat| The format that the date will be displayed in | "yyyy/MM/dd" |
+|onChange|Function that gets called whenever the user selects a date. The new date will be passed as it's argument| n/a |
+|persianDigits|Will convert the input's date to persian digits|false|
+|...Input element props| Every other prop that can be passed to an input can be also passed to this component.| n/a |
 
-### Develop
+## Credits
+Design credit goes to https://github.com/rzkhosroshahi for their awesome design: https://www.figma.com/file/tuXbhHlGs8eQpL1l0NAHHe/Calender?node-id=0%3A1
 
-To develop all apps and packages, run the following command:
+## Todo
 
-```
-cd my-turborepo
-npm run dev
-```
+ - Time Picker
+ - Ranged dates
 
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+## Issues and contribution
+Every single issue is welcomed and so is every contribution. I would be glad to hear your suggestions/requests for future updates.

@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": ["DOM"]
+  },
   "extends": "tsconfig/react-library.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

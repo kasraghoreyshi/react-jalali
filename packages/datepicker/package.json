@@ -1,0 +1,52 @@
+{
+    "name": "@react-jalali/datepicker",
+    "version": "0.0.0",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "description": "A simple, lightweight and elegant Jalali date picker for react.",
+    "author": {
+        "name": "Kasra Ghoreyshi",
+        "email": "kasra.ghoreyshi84@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kasraghoreyshi/react-jalali.git"
+    },
+    "exports": {
+        ".": "./dist",
+        "./styles.css": "./dist/styles.css"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
+        "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
+        "clean": "rm -rf dist"
+    },
+    "devDependencies": {
+        "@tabler/icons": "^1.106.0",
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "@types/react-transition-group": "^4.4.5",
+        "@types/styled-components": "^5.1.26",
+        "autoprefixer": "^10.4.12",
+        "concurrently": "^7.2.2",
+        "eslint": "^7.32.0",
+        "eslint-config-custom": "*",
+        "postcss": "^8.4.18",
+        "react": "^18.2.0",
+        "tsconfig": "*",
+        "tsup": "^6.1.3",
+        "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "@floating-ui/react-dom": "^1.0.0",
+        "@mantine/hooks": "^5.6.2",
+        "@react-jalali/calendar": "*",
+        "classnames": "^2.3.2",
+        "date-fns-jalali": "^2.29.3-0",
+        "persian-helpers": "^0.1.2",
+        "react-detect-click-outside": "^1.1.7",
+        "react-tether": "^3.0.1",
+        "react-transition-group": "^4.4.5"
+    }
+}

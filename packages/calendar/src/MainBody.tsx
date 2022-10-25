@@ -54,6 +54,7 @@ const MainBody = ({
       <div className="grid grid-cols-7 gap-4">
         {["ش", "ی", "د", "س", "چ", "پ", "ج"].map((day, index) => (
           <h2
+            key={day}
             style={{
               color: themeClasses.weekDaysTextColor,
               backgroundColor: themeClasses.weekDaysBackgroundColor,

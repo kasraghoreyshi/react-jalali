@@ -1,11 +1,11 @@
 import {
-  autoPlacement,
   autoUpdate as floatingUiAutoUpdate,
+  flip,
   shift,
   useFloating,
 } from "@floating-ui/react-dom";
-import { useClickOutside } from "@mantine/hooks";
 import { Calendar, ICalendarProps } from "@kasraghoreyshi/calendar";
+import { useClickOutside } from "@mantine/hooks";
 import { format } from "date-fns-jalali";
 import { convertDigits } from "persian-helpers";
 import { useEffect, useState } from "react";
@@ -38,7 +38,7 @@ export const DatePicker = ({
   const { x, y, reference, floating, strategy } = useFloating({
     placement: "bottom-end",
     strategy: "absolute",
-    middleware: [autoPlacement({ alignment: "start" }), shift()],
+    middleware: [flip(), shift({ crossAxis: true })],
     whileElementsMounted: floatingUiAutoUpdate,
   });
 

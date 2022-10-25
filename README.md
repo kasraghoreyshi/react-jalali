@@ -81,7 +81,7 @@ Now we are going to explore every single prop that could be passed to DatePicker
 
 ## Credits
 
-Design credit goes to https://github.com/rzkhosroshahi for their awesome design: https://www.figma.com/file/tuXbhHlGs8eQpL1l0NAHHe/Calender?node-id=0%3A1
+Design credit goes to https://dribbble.com/eanlami for their awesome design: https://www.figma.com/file/tuXbhHlGs8eQpL1l0NAHHe/Calender?node-id=0%3A1
 
 ## Todo
 

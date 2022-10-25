@@ -11,7 +11,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "publish-packages": "turbo run build lint && changeset version && changeset publish"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
@@ -22,6 +22,7 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
+    "@changesets/cli": "^2.25.0",
     "vazirmatn": "^33.0.3"
   },
   "packageManager": "npm@8.19.2"

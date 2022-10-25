@@ -1,6 +1,4 @@
-# Welcome to StackEdit!
-
- ``If you are enjoying react-jalali and want to see it improve, please consider giving it a star. Thank you in advance!``
+If you are enjoying react-jalali and want to see it improve, please consider giving it a star. Thank you in advance!
 
 # What is react-jalali?
 

@@ -1,9 +1,10 @@
 {
   "name": "@kasraghoreyshi/calendar",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "module": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "sideEffects": false,
   "files": [
     "dist/**"
   ],
@@ -47,7 +48,6 @@
     "classnames": "^2.3.2",
     "date-fns-jalali": "^2.29.3-0",
     "persian-helpers": "^0.1.2",
-    "react-transition-group": "^4.4.5",
-    "styled-components": "^5.3.6"
+    "react-transition-group": "^4.4.5"
   }
 }

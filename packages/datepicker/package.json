@@ -1,8 +1,9 @@
 {
     "name": "@kasraghoreyshi/datepicker",
-    "version": "0.1.1",
+    "version": "0.1.4",
     "main": "./dist/index.js",
-    "module": "dist/index.js",
+    "module": "./dist/index.mjs",
+    "sideEffects": false,
     "types": "./dist/index.d.ts",
     "description": "A simple, lightweight and elegant Jalali date picker for react.",
     "author": {
@@ -49,8 +50,6 @@
         "classnames": "^2.3.2",
         "date-fns-jalali": "^2.29.3-0",
         "persian-helpers": "^0.1.2",
-        "react-detect-click-outside": "^1.1.7",
-        "react-tether": "^3.0.1",
         "react-transition-group": "^4.4.5"
     }
 }

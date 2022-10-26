@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2017",
-    "lib": ["DOM"]
+    "jsx": "react-jsx",
+    "lib": ["dom", "ES2015"],
+    "module": "ESNext",
+    "target": "es6"
   },
   "extends": "tsconfig/react-library.json",
   "include": ["."],

@@ -4,6 +4,8 @@ If you are enjoying react-jalali and want to see it improve, please consider giv
 
 React-jalali is a set of React components that help you create utilities related to jalali dates such as calendars and date pickers and (coming in a future update) time pickers.
 
+Demo: https://react-jalali-demo.vercel.app/
+
 ## Installation
 
 `npm install @kasraghoreyshi/calendar`
@@ -79,7 +81,7 @@ Now we are going to explore every single prop that could be passed to DatePicker
 
 ## Credits
 
-Design credit goes to https://github.com/rzkhosroshahi for their awesome design: https://www.figma.com/file/tuXbhHlGs8eQpL1l0NAHHe/Calender?node-id=0%3A1
+Design credit goes to https://dribbble.com/eanlami for their awesome design: https://www.figma.com/file/tuXbhHlGs8eQpL1l0NAHHe/Calender?node-id=0%3A1
 
 ## Todo
 

@@ -1,3 +1,5 @@
+# This package has been moved to https://github.com/react-shamsi/react-shamsi ! This version of the package is not mainted anymore.
+
 If you are enjoying react-jalali and want to see it improve, please consider giving it a star. Thank you in advance!
 
 # What is react-jalali?
